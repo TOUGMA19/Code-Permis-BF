@@ -16,6 +16,14 @@
         { "key": "Access-Control-Allow-Headers", "value": "Content-Type" },
         { "key": "Vary", "value": "Origin" }
       ]
+    },
+    {
+      "source": "/api/admin-codes",
+      "headers": [
+        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" },
+        { "key": "Vary", "value": "Origin" }
+      ]
     }
   ]
 }
