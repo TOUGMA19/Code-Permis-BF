@@ -41,6 +41,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         duration_days: durationDays,
         customer_name: typeof body.customerName === "string" ? body.customerName.trim() || null : null,
         customer_phone: typeof body.customerPhone === "string" ? body.customerPhone.trim() || null : null,
+        marketer_id: typeof body.marketerId === "string" ? body.marketerId.trim().toUpperCase() || null : null,
       })
       .select()
       .single();
