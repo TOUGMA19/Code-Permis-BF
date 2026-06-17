@@ -1,4 +1,3 @@
-// api/list-marketers.ts
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import { applyCorsAdmin, getSupabase } from "./_lib.js";
 
