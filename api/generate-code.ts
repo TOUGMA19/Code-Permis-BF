@@ -19,7 +19,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const durationDays =
       typeof body.durationDays === "number" && body.durationDays > 0
-        ? Math.min(Math.floor(body.durationDays), 3650)
+        ? Math.min(body.durationDays, 3650)
         : 30;
 
     const supabase = getSupabase();
